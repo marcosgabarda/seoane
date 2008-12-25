@@ -1,0 +1,119 @@
+<ui version="4.0" >
+ <class>ListarFacturasClass</class>
+ <widget class="QWidget" name="ListarFacturasClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>497</width>
+    <height>348</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>ListarFacturas</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>images/LFacturas.PNG</iconset>
+  </property>
+  <property name="sizeGripEnabled" stdset="0" >
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="gridLayout" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>461</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" >
+    <item row="0" column="0" >
+     <widget class="QTableWidget" name="tableWidget" >
+      <property name="alternatingRowColors" >
+       <bool>true</bool>
+      </property>
+      <property name="selectionMode" >
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <column>
+       <property name="text" >
+        <string>Numero</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Fecha</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Nombre</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Apellidos</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Aparato</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Marca</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="1" column="0" >
+     <layout class="QHBoxLayout" >
+      <item>
+       <widget class="QPushButton" name="editarButton" >
+        <property name="text" >
+         <string>Editar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="borrarButton" >
+        <property name="text" >
+         <string>Borrar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cancelarButton" >
+        <property name="text" >
+         <string>Cancelar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cancelarButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ListarFacturasClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>407</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>416</x>
+     <y>337</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

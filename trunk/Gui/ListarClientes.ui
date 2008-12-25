@@ -1,0 +1,106 @@
+<ui version="4.0" >
+ <class>ListarClientesClass</class>
+ <widget class="QWidget" name="ListarClientesClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>401</width>
+    <height>302</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>ListarClientes</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>images/LCliente.PNG</iconset>
+  </property>
+  <widget class="QWidget" name="gridLayout" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" >
+    <item row="0" column="0" colspan="4" >
+     <widget class="QTableWidget" name="tableWidget" >
+      <property name="alternatingRowColors" >
+       <bool>true</bool>
+      </property>
+      <property name="sortingEnabled" >
+       <bool>false</bool>
+      </property>
+      <column>
+       <property name="text" >
+        <string>Código</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Nombre</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Apellidos</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>NIF</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item rowspan="2" row="1" column="0" colspan="4" >
+     <layout class="QHBoxLayout" >
+      <item>
+       <widget class="QPushButton" name="pushButton_3" >
+        <property name="text" >
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2" >
+        <property name="text" >
+         <string>PushButton</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton" >
+        <property name="text" >
+         <string>PushButton</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ListarClientesClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>335</x>
+     <y>269</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>350</x>
+     <y>294</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

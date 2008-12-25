@@ -1,0 +1,95 @@
+<ui version="4.0" >
+ <class>ListarArticulosClass</class>
+ <widget class="QWidget" name="ListarArticulosClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>ListarArticulos</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>images/LArticulo.PNG</iconset>
+  </property>
+  <widget class="QWidget" name="gridLayout" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" >
+    <item rowspan="2" row="0" column="0" >
+     <widget class="QTableWidget" name="tableWidget" >
+      <column>
+       <property name="text" >
+        <string>Codigo</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Descripcion</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Precio</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="2" column="0" >
+     <layout class="QHBoxLayout" >
+      <item>
+       <widget class="QPushButton" name="pushButton_3" >
+        <property name="text" >
+         <string>Mostrar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton" >
+        <property name="text" >
+         <string>Borrar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2" >
+        <property name="text" >
+         <string>Cancelar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>ListarArticulosClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>330</x>
+     <y>275</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>344</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

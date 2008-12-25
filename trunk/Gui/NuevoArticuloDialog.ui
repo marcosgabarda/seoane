@@ -1,0 +1,175 @@
+<ui version="4.0" >
+ <class>AltaArticuloDialogClass</class>
+ <widget class="QDialog" name="AltaArticuloDialogClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="font" >
+   <font>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle" >
+   <string>Alta Articulo</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>images/NArticulo.PNG</iconset>
+  </property>
+  <widget class="QWidget" name="gridLayout" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>431</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" >
+    <item row="0" column="0" >
+     <widget class="QLabel" name="label" >
+      <property name="text" >
+       <string>Codigo</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" >
+     <widget class="QLineEdit" name="lineEdit" />
+    </item>
+    <item row="1" column="0" >
+     <widget class="QLabel" name="label_2" >
+      <property name="text" >
+       <string>Descripcion</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" >
+     <widget class="QLineEdit" name="lineEdit_2" />
+    </item>
+    <item row="2" column="0" >
+     <widget class="QLabel" name="label_3" >
+      <property name="text" >
+       <string>Caja</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" >
+     <widget class="QLineEdit" name="lineEdit_3" />
+    </item>
+    <item row="3" column="0" >
+     <widget class="QLabel" name="label_8" >
+      <property name="text" >
+       <string>Descuento</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" >
+     <widget class="QLineEdit" name="lineEdit_8" />
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="gridLayout_2" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>431</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" >
+    <item row="0" column="0" >
+     <widget class="QLabel" name="label_4" >
+      <property name="text" >
+       <string>Existencias</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" >
+     <widget class="QLineEdit" name="lineEdit_4" />
+    </item>
+    <item row="0" column="2" >
+     <widget class="QLabel" name="label_5" >
+      <property name="text" >
+       <string>Existencias minimas</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3" >
+     <widget class="QLineEdit" name="lineEdit_5" />
+    </item>
+    <item row="1" column="0" >
+     <widget class="QLabel" name="label_6" >
+      <property name="text" >
+       <string>PVP</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" >
+     <widget class="QLineEdit" name="lineEdit_6" />
+    </item>
+    <item row="1" column="2" >
+     <widget class="QLabel" name="label_7" >
+      <property name="text" >
+       <string>Precio Coste</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3" >
+     <widget class="QLineEdit" name="lineEdit_7" />
+    </item>
+   </layout>
+  </widget>
+   <widget class="QWidget" name="horizontalLayout" >
+   <property name="geometry" >
+    <rect>
+     <x>190</x>
+     <y>350</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" >
+    <item>
+     <widget class="QPushButton" name="cancelarButton" >
+      <property name="text" >
+       <string>Cancelar</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="guardarButton" >
+      <property name="text" >
+       <string>Guardar</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cancelarButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AltaArticuloDialogClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>320</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>246</x>
+     <y>329</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,71 @@
+<ui version="4.0" >
+ <class>VisorAyudaClass</class>
+ <widget class="QWidget" name="VisorAyudaClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>565</width>
+    <height>503</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>VisorAyuda</string>
+  </property>
+  <widget class="QWidget" name="gridLayout" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>541</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" >
+    <item row="2" column="1" >
+     <widget class="QPushButton" name="pushButton" >
+      <property name="text" >
+       <string>&amp;Aceptar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" >
+     <spacer>
+      <property name="orientation" >
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" >
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item rowspan="2" row="0" column="0" colspan="2" >
+     <widget class="QTextBrowser" name="textBrowser" />
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>VisorAyudaClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>352</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>348</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

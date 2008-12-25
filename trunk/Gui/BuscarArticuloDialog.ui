@@ -1,0 +1,118 @@
+<ui version="4.0" >
+ <class>BuscarArticuloDialogClass</class>
+ <widget class="QDialog" name="BuscarArticuloDialogClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>121</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Buscar Articulo</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>images/BArticulo.PNG</iconset>
+  </property>
+  <widget class="QWidget" name="gridLayout" >
+   <property name="geometry" >
+    <rect>
+     <x>11</x>
+     <y>10</y>
+     <width>381</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" >
+    <item row="0" column="0" >
+     <widget class="QLabel" name="label" >
+      <property name="text" >
+       <string>Codigo</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" >
+     <widget class="QLabel" name="label_2" >
+      <property name="text" >
+       <string>Descripcion</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" >
+     <widget class="QLineEdit" name="lineEdit" />
+    </item>
+    <item row="1" column="1" >
+     <widget class="QLineEdit" name="lineEdit_2" />
+    </item>
+    <item row="2" column="1" >
+     <layout class="QHBoxLayout" >
+      <item>
+       <spacer>
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" >
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton" >
+        <property name="text" >
+         <string>Buscar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2" >
+        <property name="text" >
+         <string>Cancelar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>BuscarArticuloDialogClass</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>263</x>
+     <y>94</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>201</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>BuscarArticuloDialogClass</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>333</x>
+     <y>92</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>310</x>
+     <y>69</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
